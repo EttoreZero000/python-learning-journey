@@ -46,6 +46,7 @@ def main() -> None:
     """
     Función principal del programa.
     """
+    print("Hola conexion")
     x = int(input("Digite un número: "))
     print(es_par(x))
 
