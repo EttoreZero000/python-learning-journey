@@ -23,13 +23,31 @@ def signo(x: int) -> str:
         return "Es negativo"
     return "Es cero"
 
+def es_par(x: int) -> str:
+    """
+    Determinar si un numero es par o impar
+
+    Args:
+        x (int): Numero entero.
+
+    Returns:
+        str: Indica si es par o no
+    """
+
+    if x<=0:
+        return "Error: el numero tiene que ser positivo"
+
+    if x%2 == 0:
+        return "Es par"
+    return "Es impar"
+
 
 def main() -> None:
     """
     Función principal del programa.
     """
     x = int(input("Digite un número: "))
-    print(signo(x))
+    print(es_par(x))
 
 
 if __name__ == "__main__":
