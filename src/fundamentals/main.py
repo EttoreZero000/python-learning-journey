@@ -230,14 +230,45 @@ def palindromo_numero(x: int) -> str:
 
     return "No es palindromo"
 
+def cantidad_digitos_refactorizada(x: int) -> int:
+    """
+    Reto 4: Refactoriza
+    Calcula la cantidad de digitos de un numero
+
+    Args:
+        x (int): Numero entero positivo
+
+    Returns:
+        int: Cantidad de digitos en un numero x positivo
+                    o un mensaje de error en caso contrario
+    
+    Raises:
+    ValueError: Si x <= 0
+    """
+    if x <= 0:
+        raise ValueError("x debe de ser un numero entero positivo")
+    
+    if x <= 0:
+        raise ValueError("x debe ser un entero positivo")
+
+    contador = 0
+    while x > 0:
+        contador += 1
+        x //= 10
+
+    return contador
+
+
 def main() -> None:
     """
     Función principal del programa.
     """
     print("Hola, si hay conexion con docker")
-    x = int(input("Digite un número: "))
-    print(es_primo(x))
-
+    try:
+        x = int(input("Digite un número: "))
+        print(cantidad_digitos_refactorizada(x))
+    except ValueError as e:
+        print(f"Error: {e}")
 
 if __name__ == "__main__":
     main()
