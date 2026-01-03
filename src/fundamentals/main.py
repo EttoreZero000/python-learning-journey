@@ -41,6 +41,20 @@ def es_par(x: int) -> str:
         return "Es par"
     return "Es impar"
 
+def sumar_n(x: int) -> str:
+    """
+    if x<=0:
+        return x
+    return x + (sumar_n(x-1))
+    """
+    if x<=0:
+        return "Error: el numero tiene que ser positivo"
+    i=0
+    while x>0:
+        i+=x
+        x-=1
+    return i
+
 
 def main() -> None:
     """
@@ -48,7 +62,7 @@ def main() -> None:
     """
     print("Hola conexion")
     x = int(input("Digite un número: "))
-    print(es_par(x))
+    print(sumar_n(x))
 
 
 if __name__ == "__main__":
