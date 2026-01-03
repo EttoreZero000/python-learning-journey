@@ -281,6 +281,24 @@ def invertir_numero_refactorizada(x: int) -> int:
         x //= 10
     return resultado
 
+def palindromo_numero_refactorizada(x: int) -> bool:
+    """
+    Determina si un número entero positivo es palíndromo.
+
+    Args:
+        x (int): Entero positivo.
+
+    Returns:
+        bool: True si es palíndromo, False en caso contrario.
+
+    Raises:
+        ValueError: Si x <= 0.
+    """
+    if x <= 0:
+        raise ValueError("x debe ser un entero positivo")
+
+    return x == invertir_numero_refactorizada(x)
+
 def main() -> None:
     """
     Función principal del programa.
@@ -288,7 +306,7 @@ def main() -> None:
     print("Hola, si hay conexion con docker")
     try:
         x = int(input("Digite un número: "))
-        print(invertir_numero_refactorizada(x))
+        print(palindromo_numero_refactorizada(x))
     except ValueError as e:
         print(f"Error: {e}")
 
