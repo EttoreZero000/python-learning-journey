@@ -41,19 +41,27 @@ def es_par(x: int) -> str:
         return "Es par"
     return "Es impar"
 
-def sumar_n(x: int) -> str:
+def sumar_n(x: int) -> int | str:
     """
-    if x<=0:
-        return x
-    return x + (sumar_n(x-1))
+    Calcula la suma de los números desde 1 hasta n.
+
+    Args:
+        x (int): Número entero positivo.
+
+    Returns:
+        int | str: La suma total si x es positivo,
+                   o un mensaje de error en caso contrario.
     """
-    if x<=0:
-        return "Error: el numero tiene que ser positivo"
-    i=0
-    while x>0:
-        i+=x
-        x-=1
-    return i
+    if x <= 0:
+        return "Error: el número tiene que ser positivo"
+
+    total = 0
+    while x > 0:
+        total += x
+        x -= 1
+
+    return total
+
 
 
 def main() -> None:
