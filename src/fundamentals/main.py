@@ -259,7 +259,18 @@ def cantidad_digitos_refactorizada(x: int) -> int:
     return contador
 
 def invertir_numero_refactorizada(x: int) -> int:
+    """
+    Reto 13:
 
+    Args:
+        x (int): Numero entero positivo
+
+    Returns:
+        int: Numero invertido
+
+    raise:
+        ValueError si x<=0
+    """
     if x<=0:
         raise ValueError("x no puede ser 0 o negativo")
     
