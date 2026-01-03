@@ -232,7 +232,7 @@ def palindromo_numero(x: int) -> str:
 
 def cantidad_digitos_refactorizada(x: int) -> int:
     """
-    Reto 4: Refactoriza
+    Reto 12:
     Calcula la cantidad de digitos de un numero
 
     Args:
@@ -258,6 +258,17 @@ def cantidad_digitos_refactorizada(x: int) -> int:
 
     return contador
 
+def invertir_numero_refactorizada(x: int) -> int:
+
+    if x<=0:
+        raise ValueError("x no puede ser 0 o negativo")
+    
+    resultado = 0
+    n=cantidad_digitos_refactorizada(x) - 1
+    for i in range(n, -1, -1):
+        resultado += (x % 10) * 10** i
+        x //= 10
+    return resultado
 
 def main() -> None:
     """
@@ -266,7 +277,7 @@ def main() -> None:
     print("Hola, si hay conexion con docker")
     try:
         x = int(input("Digite un número: "))
-        print(cantidad_digitos_refactorizada(x))
+        print(invertir_numero_refactorizada(x))
     except ValueError as e:
         print(f"Error: {e}")
 
