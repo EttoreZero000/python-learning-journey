@@ -82,3 +82,4 @@ Si quieres dar feedback, sugerencias o simplemente seguir el progreso:
 ---
 
 > *“La disciplina vence al talento cuando el talento no es disciplinado.”*
+> *“Si lo puedes imaginar, lo puedes programar.”*
