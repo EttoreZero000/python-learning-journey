@@ -62,15 +62,103 @@ def sumar_n(x: int) -> int | str:
 
     return total
 
+def cantidad_digitos(x: int) -> int | str:
+    """
+    Reto 4:
+    Calcula la cantidad de digitos de un numero
+
+    Args:
+        x (int): Numero entero positivo
+
+    Returns:
+        int | str: Cantidad de digitos en un numero x positivo
+                    o un mensaje de error en caso contrario
+    """
+    if x <= 0:
+        return "Tiene que ser positivo."
+    n=1
+
+    while True:
+        if x/(10**n) < 1:
+            return n
+        n+=1
+
+def num_mayor(x: int, y: int, z: int) -> int | str:
+    """
+    Reto 5:
+    Dice el numero mayor, y si hay duplicados dice que "hay duplicados de x numero"
+
+    Args:
+        x, y, z (int): Numeros enteros positivos
+
+    Returns:
+        int | str: Dice cual numero es mayor,
+                    si hay duplicados lo dice
+
+    """
+    if x>=y and x>=z:
+        if x==y or x==z:
+            return ("El mayor es "+ str(x) + " y hay duplicado")
+        else:
+            return x
+    return(num_mayor(y,z,x))
+    
+def sumar_numeros(x: int) -> int | str:
+    temp=0
+    n=cantidad_digitos(x)
+    for i in range(1, n):
+        temp = x//10**i * 10
+    return temp
+
+def invertir_numero(x: int) -> int | str:
+    """
+    Reto 6:
+
+    Args:
+        x (int): Numero entero positivo
+
+    Returns:
+        int | str: Devuelve el numero invertido,
+                    si es negativo dice error
+    """
+    if x <= 0:
+        return "No puede ser un negativo"
+
+    resultado = 0
+    n=cantidad_digitos(x) - 1
+    for i in range(n, -1, -1):
+        resultado += (x % 10) * 10** i
+        x //= 10
+    return resultado
+    
+def sumar_pares(x: int) -> int | str:
+    """
+    Reto 7:
+
+    Args:
+        x (int): Numero entero positivo
+
+    Returns:
+        int | str: Devuelve la suma de todos los pares positivos
+                    si es un numero negativo o cero error.
+    """
+    if x<=0:
+        return "Error: no se puede 0 o negativos"
+
+    temp=0
+    for i in range(2,x+1,2):
+        temp+=i
+    return temp
+
 
 
 def main() -> None:
     """
     Función principal del programa.
     """
-    print("Hola conexion")
+    print("Hola, si hay conexion con docker")
     x = int(input("Digite un número: "))
-    print(sumar_n(x))
+    print(sumar_pares(x))
 
 
 if __name__ == "__main__":
