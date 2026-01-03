@@ -102,13 +102,6 @@ def num_mayor(x: int, y: int, z: int) -> int | str:
         else:
             return x
     return(num_mayor(y,z,x))
-    
-def sumar_numeros(x: int) -> int | str:
-    temp=0
-    n=cantidad_digitos(x)
-    for i in range(1, n):
-        temp = x//10**i * 10
-    return temp
 
 def invertir_numero(x: int) -> int | str:
     """
@@ -150,6 +143,81 @@ def sumar_pares(x: int) -> int | str:
         temp+=i
     return temp
 
+def pares_basica(x: int) -> int | str:
+    """
+    Reto 8:
+
+    Args:
+        x (int): Numero entero positivo
+    
+    Returns:
+        int | str: Devuelve la cantidad de pares que hay de 1 a x
+                    si es un numero negativo o cero da error
+    """
+
+    if x<=0:
+        return "Error: el numero es 0 o negativo"
+
+    n,pares=0,0
+
+
+    while True:
+        n += 1
+        x -= 1
+
+        if n == 2:
+            n = 0
+            pares += 1
+        
+        if x == 0:
+            return pares
+        
+def es_primo(x: int) -> str:
+    """
+    Reto 9:
+
+    Args:
+        x (int): Nuero entero positivo
+    
+    Returns:
+        str: Devuelve "No es primo" o "Es primo",
+                si es negativo o 0, se devuelve un error
+    """
+
+    if x<=0:
+        return "Error: el numero es 0 o negativo"
+
+    n=x**(1/2)
+
+    n=int(x//n)
+
+    for i in range (2, n+1):
+        if x%i == 0:
+            return "No es primo"
+    return "Es primo"
+
+def sumar_numeros(x: int) -> int | str:
+    """
+    Reto 10:
+
+    Args:
+        x (int): Numero entero positivo
+    
+    Returns:
+        str: Devuelve la suma de todos los digitos individuales
+            si es negativo o un 0, devuelve un error
+    """
+
+    if x <= 0:
+        return "No puede ser un negativo"
+
+    resultado = 0
+    n=cantidad_digitos(x) - 1
+    for i in range(n, -1, -1):
+        resultado += (x % 10)
+        x //= 10
+    return resultado
+
 
 
 def main() -> None:
@@ -158,7 +226,7 @@ def main() -> None:
     """
     print("Hola, si hay conexion con docker")
     x = int(input("Digite un número: "))
-    print(sumar_pares(x))
+    print(sumar_numeros(x))
 
 
 if __name__ == "__main__":
