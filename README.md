@@ -51,7 +51,7 @@ A lo largo del reto se cubrirán temas como:
 - Algoritmos básicos
 - Lógica de programación
 - Buenas prácticas
-- Pequeños proyectos
+- Pequeños proyectos (GUI)
 
 ---
 
