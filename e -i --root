@@ -1,0 +1,110 @@
+[33mcommit e3f3bb11417084f7fa7c80a0ae9cb9a254f9d5bc[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Hector David Leiva Gamboa <hectorleivagamboa0741@gmail>
+Date:   Sat Jan 3 00:17:55 2026 -0600
+
+    readme.md
+
+[33mcommit 87c2bdad5c31c96aba173297a21be4c04bb275a9[m
+Author: Hector David Leiva Gamboa <hectorleivagamboa0741@gmail>
+Date:   Sat Jan 3 00:05:32 2026 -0600
+
+    Dia 003
+
+[33mcommit c61d5eb3680153671b19c2c2b2c94179328c5076[m
+Author: Hector David Leiva Gamboa <hectorleivagamboa0741@gmail>
+Date:   Fri Jan 2 18:30:09 2026 -0600
+
+    Dia 3
+
+[33mcommit a8f95d0b00d82e5dd3d73b8536dceb79c9ad66f1[m
+Author: Hector David Leiva Gamboa <hectorleivagamboa0741@gmail>
+Date:   Fri Jan 2 08:53:23 2026 -0600
+
+    Dia 003 corregido
+
+[33mcommit ee1d370b2fa3d289b8715bca64ac2cf411637196[m
+Author: Hector David Leiva Gamboa <hectorleivagamboa0741@gmail>
+Date:   Fri Jan 2 08:52:55 2026 -0600
+
+    Dia 003
+
+[33mcommit fb0ee12fe6bfd62332237be8c7b61dccdc4e2171[m
+Author: Hector David Leiva Gamboa <hectorleivagamboa0741@gmail>
+Date:   Fri Jan 2 08:09:06 2026 -0600
+
+    Renovar
+
+[33mcommit b8671c18d5620438ee43c78b0adf9f2558cc54c9[m
+Author: Hector David Leiva Gamboa <hectorleivagamboa0741@gmail>
+Date:   Fri Jan 2 08:08:22 2026 -0600
+
+    Test .md
+
+[33mcommit 69f0860120a2c79dcb06fedce8da9b2258a5641e[m
+Author: EttoreZero000 <118388779+EttoreZero000@users.noreply.github.com>
+Date:   Thu Jan 1 23:57:09 2026 -0600
+
+    Revise README for Python learning journey
+    
+    Added a comprehensive overview of a 365-day Python coding challenge, including objectives, topics covered, and personal motivation.
+
+[33mcommit 56e49f7544c341bc2cb9d3e52efcde9fb831ce04[m
+Author: Hector David Leiva Gamboa <hectorleivagamboa0741@gmail>
+Date:   Thu Jan 1 23:56:18 2026 -0600
+
+    Incluir docker-compose para ejecutar el programa dentro de un contenedor
+
+[33mcommit fb137e364c01cc88783a74b37695ee897a29d476[m
+Author: Hector Leiva Gamboa <hectorleivagamboa0741@gmail.com>
+Date:   Thu Jan 1 23:15:19 2026 -0600
+
+    Corregir el nombre de 001.py a main.py
+
+[33mcommit e73934387d3dc3bfcaa877fee5e39e30060f875d[m
+Author: Hector Leiva Gamboa <hectorleivagamboa0741@gmail.com>
+Date:   Thu Jan 1 23:13:49 2026 -0600
+
+    Dia 2 del 265
+
+[33mcommit def36c1f7d3a77dbdeb8279051385fa100ae995c[m
+Author: Hector Leiva Gamboa <hectorleivagamboa0741@gmail.com>
+Date:   Thu Jan 1 19:35:09 2026 -0600
+
+    test
+
+[33mcommit 3e62267b02d32e6892f8e8f93286109a724be875[m
+Author: Hector Leiva Gamboa <hectorleivagamboa0741@gmail.com>
+Date:   Thu Jan 1 19:31:35 2026 -0600
+
+    test
+
+[33mcommit 76fab52f1d3f34df0b6f3ce5b336046840f67472[m
+Merge: 9036869 aeed3e0
+Author: Hector Leiva Gamboa <hectorleivagamboa0741@gmail.com>
+Date:   Thu Jan 1 19:28:22 2026 -0600
+
+    Merge branch 'main' of github.com:EttoreZero000/python-learning-journey
+
+[33mcommit aeed3e0288c793731399e38077fadd07c07ad1e3[m
+Author: EttoreZero000 <118388779+EttoreZero000@users.noreply.github.com>
+Date:   Thu Jan 1 19:23:38 2026 -0600
+
+    Initial commit
+
+[33mcommit 9036869fe26102dea9795a38ae619107f39594e9[m
+Author: HectorLeivaGamboa <hectorleivagamboa0741@gmail.com>
+Date:   Fri Jan 2 01:10:43 2026 +0000
+
+    Dia 001 corregido ChatGTP
+
+[33mcommit d91e3f4f8f2fa97f4a0692f2639f1b2d2ceba5a6[m
+Author: HectorLeivaGamboa <hectorleivagamboa0741@gmail.com>
+Date:   Fri Jan 2 01:09:25 2026 +0000
+
+    Dia 001
+
+[33mcommit 05d5284610198288e28bde73d6139f7d555f862f[m
+Author: HectorLeivaGamboa <hectorleivagamboa0741@gmail.com>
+Date:   Fri Jan 2 01:00:19 2026 +0000
+
+    Init repo

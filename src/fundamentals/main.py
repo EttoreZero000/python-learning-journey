@@ -187,9 +187,7 @@ def es_primo(x: int) -> str:
     if x<=0:
         return "Error: el numero es 0 o negativo"
 
-    n=x**(1/2)
-
-    n=int(x//n)
+    n=int(x**(0.5))
 
     for i in range (2, n+1):
         if x%i == 0:
@@ -218,7 +216,19 @@ def sumar_numeros(x: int) -> int | str:
         x //= 10
     return resultado
 
+def palindromo_numero(x: int) -> str:
+    """
+    Reto 11
 
+    Args:
+        x (int): Entero positivo
+
+    Returns:
+        str: Devuelve si es un palindromo o no lo es
+    """
+    if x == invertir_numero(x): return "Es palindromo"
+
+    return "No es palindromo"
 
 def main() -> None:
     """
@@ -226,7 +236,7 @@ def main() -> None:
     """
     print("Hola, si hay conexion con docker")
     x = int(input("Digite un número: "))
-    print(sumar_numeros(x))
+    print(es_primo(x))
 
 
 if __name__ == "__main__":
