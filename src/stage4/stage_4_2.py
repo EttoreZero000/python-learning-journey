@@ -11,18 +11,42 @@ def validar_analisis(data: dict) -> None:
         ValueError: si la estructura es inválida
     """
 
+
     if type(data) != dict:
         raise ValueError("Esto no es un diccionario")
+    
+    required_keys = {"digitos", "invertido", "palindromo"}
+    if set(data.keys()) != required_keys:
+        raise ValueError("Estructura inválida")
+    
+    for key in data.keys():
+        if key not in ["digitos", "invertido", "palindromo"]:
+            raise ValueError(f"No esta {key}")
+        
+        if key == "digitos" or key == "invertido":
+            if not isinstance(data[key], int):
+                raise ValueError(f"{data[key]} no es un int")
+            
+        if key == "palindromo":
+            if not isinstance(data[key], bool):
+                raise ValueError(f"{data[key]} no es un bool")
+
 
 def formatear_analisis(data: dict) -> str:
     """
     Recibe un análisis validado y lo convierte en texto legible.
     """
-    string = ""
+    string = "Análisis del número: \n"
     for key in data.keys():
-        string += f"{key}: {data[key]} \n"
+        if key == "palindromo":
+            flag = "No"
+            if data[key]:
+                flag = "Si"
+            string += f"- ¿Es palíndromo?: {flag} \n"
+            break
+        string += f"- {key}: {data[key]} \n"
 
-    print(string)
+    return string
 
 
 
@@ -36,7 +60,7 @@ def procesar_numero(x: int) -> str:
 
     validar_analisis(diccionario)
 
-    formatear_analisis(diccionario)
+    return formatear_analisis(diccionario)
 
 
 def main() -> None:
