@@ -55,6 +55,65 @@ A lo largo del reto se cubrirán temas como:
 
 ---
 
+## Stage's
+
+## Stage 1 – Fundamentos de Programación
+
+**Objetivo:** Dominar la lógica básica y el pensamiento algorítmico.
+
+**Contenido trabajado:**
+- Tipos de datos básicos (`int`, `str`, `bool`)
+- Operadores aritméticos y lógicos
+- Condicionales (`if / elif / else`)
+- Bucles (`while`, `for`)
+- Funciones
+- Entrada y salida por consola
+- Resolución de problemas simples
+
+---
+
+## Stage 2 – Control, Validación y Estructura
+
+**Objetivo:** Escribir código correcto y controlado.
+
+**Contenido trabajado:**
+- Validación de datos de entrada
+- Manejo básico de errores
+- Retornos claros en funciones
+- Separación entre lógica y entrada/salida
+- Uso de docstrings
+- Refactorización básica
+
+---
+
+## Stage 3 – Profesionalización del Código
+
+**Objetivo:** Aplicar prácticas profesionales en Python.
+
+**Contenido trabajado:**
+- Uso de excepciones (`raise ValueError`)
+- Tipado con `type hints`
+- Funciones con responsabilidades claras
+- Reutilización de código
+- Refactorización orientada a legibilidad
+- Convenciones de estilo en Python
+
+---
+
+## Stage 4 – Modularización y Arquitectura
+
+**Objetivo:** Pensar en términos de proyecto y sistema.
+
+**Contenido trabajado:**
+- Estructura de carpetas (`src/`, módulos, stages)
+- Imports correctos y ejecución con `-m`
+- Uso de `__init__.py`
+- Separación por capas (lógica, validación, presentación)
+- Diccionarios estructurados como contratos
+- Tests básicos de comportamiento
+
+---
+
 ## 🔁 Progreso
 
 - 🚀 Etapa 1: Recorrer las sintaxis mas basicas de python
