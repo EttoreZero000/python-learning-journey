@@ -116,7 +116,11 @@ A lo largo del reto se cubrirán temas como:
 
 ## 🔁 Progreso
 
-- 🚀 Etapa 1: Recorrer las sintaxis mas basicas de python
+- 🚀 Etapa 1: Fundamentos de Programación
+- 🚀 Etapa 2: Control, Validación y Estructura
+- 🚀 Etapa 3: Profesionalización del Código
+- 🚀 Etapa 4: Modularización y Arquitectura
+- 🚀 Etapa 5: Proyecto Stardew Valley
 - ⏳ En progreso…
 
 *(El progreso se actualiza día a día con commits)*
