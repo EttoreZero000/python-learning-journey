@@ -8,10 +8,10 @@ Nombre: stardew_manager
 
 "imports"
 
-from models.crop import cultivos
+from models.crop import Crop
 
 try:
-    cultivos_1 = cultivos("Chirivia", 20, 4, 35)
-    cultivos_1.imprimir()
+    cultivos_1 = Crop("Chirivia", 20, 4, 35)
 except ValueError as e:
     print(e)
+

@@ -1,13 +1,13 @@
-class cultivos:
-    def __init__(self, name: str, costo: int, days: int, sell: int):
+class Crop:
+    """
+    Representa un tipo de cultivo.
+    """
 
-        if costo < 0 or days < 0 or sell < 0:
-            raise ValueError("No se puende valores negativos")
+    def __init__(self, name: str, seed_cost: int, grow_days: int, sell_price: int):
+        if seed_cost <= 0 or grow_days <= 0 or sell_price <= 0:
+            raise ValueError("Los valores del cultivo deben ser positivos")
 
         self.name = name
-        self.costo = costo
-        self.days = days
-        self.sell = sell
-
-    def imprimir(self):
-        print(f"Nombre: {self.name}, \nCosto: {self.costo} \nDias: {self.days} \nVenta: {self.sell} \nGanancia: {self.sell - self.costo}")
+        self.seed_cost = seed_cost
+        self.grow_days = grow_days
+        self.sell_price = sell_price
