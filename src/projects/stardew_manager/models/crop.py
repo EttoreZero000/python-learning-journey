@@ -11,3 +11,5 @@ class Crop:
         self.seed_cost = seed_cost
         self.grow_days = grow_days
         self.sell_price = sell_price
+        self.dias_plantado = 0
+        self.is_ready = False

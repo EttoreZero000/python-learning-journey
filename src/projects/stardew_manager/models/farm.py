@@ -29,11 +29,15 @@ class Farm:
         for _ in range(quantity):
             self._plants.append({
                 "crop": crop,
-                "day_planted": self.day
+                "day_planted": self.day,
             })
 
     def advance_day(self):
+
         self.day += 1
+
+
+
 
     def harvest_ready(self) -> List[Crop]:
         """
