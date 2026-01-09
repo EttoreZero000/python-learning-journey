@@ -10,7 +10,7 @@ Nombre: stardew_manager
 
 from models.crop import Crop
 from models.farm import Farm
-from services.simulation import advance_days
+from services.simulation import SimulationEngine
 
 try:
     chirivia = Crop("Chirivia", 20, 4, 35)
@@ -18,7 +18,9 @@ try:
 
     granja.plant(chirivia, 20)
 
-    advance_days(5, granja)
+    simulador = SimulationEngine(granja)
+
+    simulador.advance_days(5)
 
     lista = granja.harvest_ready()
 
@@ -31,11 +33,9 @@ try:
 
     print(granja.day)
 
-    advance_days(0, granja)
+    simulador.advance_days(1)
 
     print(granja.day)
-
-
 
 
 
