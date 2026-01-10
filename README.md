@@ -120,7 +120,7 @@ A lo largo del reto se cubrirán temas como:
 - 🚀 Etapa 2: Control, Validación y Estructura
 - 🚀 Etapa 3: Profesionalización del Código
 - 🚀 Etapa 4: Modularización y Arquitectura
-- 🚀 Etapa 5: Proyecto Stardew Valley (src/projects)
+- 🚀 Etapa 5: ...
 - ⏳ En progreso…
 
 *(El progreso se actualiza día a día con commits)*
