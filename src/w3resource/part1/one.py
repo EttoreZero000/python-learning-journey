@@ -1,3 +1,15 @@
+"""
+Docstring para w3resource.part1.main
+
+This is a firt part for w3resource in python basic 1-50
+Python Basic (Part -I) - Exercises, Practice, Solution
+
+Name: Hector Daivd Leiva Gamboa
+Start: 01-13-2026 (MM/DD/YYYY)
+End:
+Version: Python3.13
+"""
+
 import sys
 import datetime
 import math
@@ -35,7 +47,7 @@ def reverse_full_name():
 
     print(f"Hello {lname} {fname}")
 
-def one():
+def list_and_tuple_generator():
     numbers = input("List numbers: ")  # ej: 3, 2, 1, 23
     list = numbers.split(",")
     tupla = tuple(list)
