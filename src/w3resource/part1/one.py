@@ -47,10 +47,70 @@ def reverse_full_name():
 
     print(f"Hello {lname} {fname}")
 
-def list_and_tuple_generator():
+def list_and_tuple_generator1():
     numbers = input("List numbers: ")  # ej: 3, 2, 1, 23
+    numbers=numbers.replace(" ", "")
     list = numbers.split(",")
     tupla = tuple(list)
 
     print(list)
     print(tupla)
+
+def list_and_tuple_generator2():
+    numbers = input("List numbers: ")  # ej: 3, 2, 1, 23
+    newString = ""
+    newList = []
+    newTupla = ()
+
+    for ch in numbers:
+        if ch.isdigit():
+            newString+=ch
+        elif ch in ",":
+            if newString != "":
+                newList.append(newString)
+                newString = ""
+
+    if newString != "":
+        newList.append(newString)
+
+    print(newList)
+    newTupla = tuple(newList)
+    print(newTupla)
+
+def file_extension_extractor():
+    string = input("Enter your filename: ")
+    newString = ""
+    flag = False
+
+    for ch in string:
+
+        if flag:
+            newString += ch
+
+        if ch in ".":
+            flag = True
+
+    print(newString)
+
+def first_and_last_colors():
+    color_list = ["Red","Green","White" ,"Black", "Yellow"]
+
+    print(color_list[0])
+    print(color_list[len(color_list)-1])
+
+def exam_schedule_formatter():
+    exam_st_date = (11, 12, 2014)
+    print(f"The examination will start from: {exam_st_date[0]} / {exam_st_date[1]} / {exam_st_date[2]}")
+
+def number_expansion_calculator():
+    n = int(input("Enter a number: "))
+    n = n + n*11 + n*111
+    print(n)
+
+
+
+
+
+
+
+
