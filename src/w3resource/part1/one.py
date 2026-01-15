@@ -13,6 +13,11 @@ Version: Python3.13
 import sys
 import datetime
 import math
+import calendar
+
+def two():
+    string = input("Enter the name fuction: ")
+    print(string.replace(" ", "_").lower())
 
 def formatted_twinkle_poem():
     #\n it's a next line command
@@ -107,9 +112,45 @@ def number_expansion_calculator():
     n = n + n*11 + n*111
     print(n)
 
+def function_documentation_printer():
+    print("---abs---")
+    print(abs.__doc__)
 
+    print("---len---")
+    print(len.__doc__)
 
+    print("---input---")
+    print(input.__doc__)
 
+    print("---int---")
+    print(int.__doc__)
+
+def monthly_calendar_display():
+    calendario = calendar
+
+    y = int(input("Input the year: "))
+    m = int(input("Input the month: "))
+
+    print(calendario.month(y,m))
+
+def multiline_here_document():
+    print("""        a string that you "don't" have to escape
+        This
+        is a ....... multi-line
+        heredoc string --------> example""")
+
+def days_between_dates():
+    day1 = (2014, 7, 2)
+    day2 = (2014, 7, 11)
+
+    day1 = datetime.date(day1[0], day1[1], day1[2])
+    day2 = datetime.date(day2[0], day2[1], day2[2])
+
+    print(abs(day2-day1))
+
+def sphere_volume_calculator():
+    r = 6
+    print(f"{(4/3) * r**3}π")
 
 
 

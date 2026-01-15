@@ -15,7 +15,12 @@ from one import *
 def main():
     print("------Start program------")
 
-    one()
+    try:
+        one()
+    except:
+        pass
+    
+    two()
 
 if __name__ == "__main__":
     main()
