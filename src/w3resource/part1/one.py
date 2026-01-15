@@ -152,6 +152,28 @@ def sphere_volume_calculator():
     r = 6
     print(f"{(4/3) * r**3}π")
 
+def difference_from_17():
+    n = int(input("Enter a number: "))
+
+    if n < 17: 
+        print(17-n)
+    else:
+        print((n-17)*2)
+
+def number_range_tester():
+    n = int(input("Enter a number: "))
+
+    if 100 < n and n < 2000:
+        print(f"Yes, {n} is whether of 100 to 2000")
+        return
+
+    print(f"No, {n} is not whether of 100 to 2000")
+
+
+
+
+
+
 
 
 
