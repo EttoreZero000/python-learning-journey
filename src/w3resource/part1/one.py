@@ -18,7 +18,7 @@ import calendar
 def two():
     string = input("Enter the name fuction: ")
     print(string.replace(" ", "_").lower())
-
+#1
 def formatted_twinkle_poem():
     #\n it's a next line command
     #\t it's a tabular command
@@ -111,6 +111,7 @@ def number_expansion_calculator():
     n = int(input("Enter a number: "))
     n = n + n*11 + n*111
     print(n)
+#10^^^^^^^^^^
 
 def function_documentation_printer():
     print("---abs---")
@@ -169,11 +170,32 @@ def number_range_tester():
 
     print(f"No, {n} is not whether of 100 to 2000")
 
+def triple_sum_calculator():
+    n1 = int(input("Enter the number: "))
+    n2 = int(input("Enter the number: "))
+    n3 = int(input("Enter the number: "))
 
+    if n1 == n2 == n3:
+        print(f"Output: {n1*3}")
+        return
+    print(f"Output: {n1+n2+n3}")
 
+def prefix_is_string_modifier():
+    n = input("Enter the string: ")
 
+    if n[0].lower()+n[1].lower() in "is":
+        print(n)
+        return
+    
+    print(f"Is {n}")
 
+def string_copy_generator():
+    n = input("Enter the string: ")
+    c = int(input("Enter the integer for copy: "))
 
+    
+    print(n*c)
+#20 ^^^^^^^^^^^^
 
 
 
