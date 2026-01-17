@@ -196,6 +196,18 @@ def string_copy_generator():
     
     print(n*c)
 #20 ^^^^^^^^^^^^
+def even_or_odd_checker():
+    n = int(input("Enter the number: "))
 
+    if n % 2 == 0:
+        print(f"The number {n} is even")
+        return
+    print(f"The number {n} is odd")
 
-
+def count_4_in_list():
+    list = [1,4,6,7,4,4,4]
+    x = 0
+    for n in list:
+        if n == 4:
+            x+=1
+    print(x)
