@@ -211,3 +211,13 @@ def count_4_in_list():
         if n == 4:
             x+=1
     print(x)
+
+def string_prefix_copies():
+    string = input("Enter the string: ")
+    n = int(input("Enter the integer: "))
+
+    if len(string) < 2:
+        print((string[0])*n)
+        return
+        
+    print((string[0]+string[1])*n)
