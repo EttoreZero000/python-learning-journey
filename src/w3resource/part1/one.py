@@ -221,3 +221,27 @@ def string_prefix_copies():
         return
         
     print((string[0]+string[1])*n)
+
+def vowel_tester():
+    n = input("Enter the char: ")
+
+    if len(n)>1 or n=="":
+        raise ValueError("I don't can, one letter")
+
+    if n in "aeiou":
+        return True
+    return False
+
+def one():
+    list = [1,2,3,5]
+    n = input("Enter the int: ")
+
+    try:
+        n = int(n)
+    except TypeError:
+        raise TypeError("I don't can, without integer")
+    
+    for number in list:
+        if n == number:
+            return True
+    return False

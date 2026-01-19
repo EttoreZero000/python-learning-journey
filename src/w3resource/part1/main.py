@@ -17,9 +17,9 @@ def main():
     print("------Start program------")
 
     try:
-        one()
-    except:
-        pass
+        print(one())
+    except ValueError as e:
+        print(f"Error: {e}")
 
     two()
 
