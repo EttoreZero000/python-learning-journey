@@ -14,15 +14,18 @@ import sys
 import datetime
 import math
 import calendar
+import matplotlib.pyplot as plt
+import numpy as np
 
 def two():
     string = input("Enter the name fuction: ")
     print(string.replace(" ", "_").lower())
-#1
+
 def formatted_twinkle_poem():
     #\n it's a next line command
     #\t it's a tabular command
     print("Twinkle, twinkle, little star, \n\tHow I wonder what you are! \n\t\tUp above the world so high, \n\t\tLike a diamond in the sky. \nTwinkle, twinkle, little star, \n\tHow I wonder what you are!")
+#1^^^^^^^^^^^^^^
 
 def python_version_checker():
     # Print the Python version to the console
@@ -232,7 +235,7 @@ def vowel_tester():
         return True
     return False
 
-def one():
+def value_in_group_tester():
     list = [1,2,3,5]
     n = input("Enter the int: ")
 
@@ -245,3 +248,14 @@ def one():
         if n == number:
             return True
     return False
+
+def list_histogram():
+    data = np.random.normal(70,10,100)
+
+    plt.hist(data, bins=15, color='skyblue', edgecolor='black')
+
+    plt.xlabel('Value')
+    plt.ylabel('Frequency')
+    plt.title('Example Histogram')
+
+    plt.show()
