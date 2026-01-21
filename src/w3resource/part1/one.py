@@ -290,3 +290,15 @@ def unique_colors_finder():
 
     #If use & is "interseccion"
     return color_list_1 - color_list_2
+
+def triangle_area_calculator():
+    b = input("Enter the base: ")
+    h = input("Enter the height: ")
+
+    try:
+        b=float(b)
+        h=float(h)
+    except ValueError:
+        raise ValueError("I don't can, without float number")
+    
+    return(f"Area: {(b*h)/2}")
