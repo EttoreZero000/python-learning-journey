@@ -12,10 +12,11 @@ Version: Python3.13
 
 import sys
 import datetime
-import math
+from math import *
 import calendar
 import matplotlib.pyplot as plt
 import numpy as np
+from functools import reduce
 
 def two():
     string = input("Enter the name fuction: ")
@@ -302,7 +303,7 @@ def triangle_area_calculator():
         raise ValueError("I don't can, without float number")
     
     return(f"Area: {(b*h)/2}")
-
+#30 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 def gcd_number(n):
     lista = []
     for i in range(1,n+1):
@@ -315,15 +316,35 @@ def gcd_number(n):
 def gcd_calculator():
     n1 = input("Enter the number: ")
     n2 = input("Enter the number: ")
-    lista = []
 
     try:
-        n1 = int(n1)
-        n2 = int(n2)
+        if int(n1)>0 and int(n2)>0:
+            n1 = int(n1)
+            n2 = int(n2)
+        else:
+            raise ValueError("I don't can, without int number positive")
     except ValueError:
-        raise ValueError("I don't can, without int number")
+        raise ValueError("I don't can, without int number positive")
     
     lista1 = gcd_number(n1)
     lista2 = gcd_number(n2)
 
     return(max(lista1 & lista2))
+
+def lcm_calculator():
+    n1 = input("Enter the number: ")
+    n2 = input("Enter the number: ")
+
+    try:
+        if int(n1)>0 and int(n2)>0:
+            n1 = int(n1)
+            n2 = int(n2)
+        else:
+            raise ValueError("I don't can, without int number positive")
+    except ValueError:
+        raise ValueError("I don't can, without int number positive")
+    
+    return n1 * n2 /gcd(n1,n2)
+
+def lcm_calculator2(numbers):
+    return reduce((lambda x, y: int(x*y/gcd(x,y))),numbers)
