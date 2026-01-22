@@ -12,6 +12,7 @@ Version: Python3.13
 
 import sys
 import datetime
+import math
 from math import *
 import calendar
 import matplotlib.pyplot as plt
@@ -312,7 +313,6 @@ def gcd_number(n):
     
     return set(lista)
 
-
 def gcd_calculator():
     n1 = input("Enter the number: ")
     n2 = input("Enter the number: ")
@@ -348,3 +348,48 @@ def lcm_calculator():
 
 def lcm_calculator2(numbers):
     return reduce((lambda x, y: int(x*y/gcd(x,y))),numbers)
+
+def triple_sum_with_equality_rule():
+    n1 = input("Enter the integer: ")
+    n2 = input("Enter the integer: ")
+    n3 = input("Enter the integer: ")
+
+    try:
+        n1 = int(n1)
+        n2 = int(n2)
+        n3 = int(n3)
+    except ValueError:
+        raise ValueError("I don't can, without intenger")
+    
+    if n1 == n2 or n2 == n3 or n1 == n3:
+        return 0
+    return n1+n2+n3
+
+def conditional_sum_to_20():
+    n1 = input("Enter the integer: ")
+    n2 = input("Enter the integer: ")
+
+    try:
+        n1 = int(n1)
+        n2 = int(n2)
+    except ValueError:
+        raise ValueError("I don't can, without intenger")
+    
+    if n1 + n2 > 15 and n1 + n2 < 20:
+        return 20
+    return n1 + n2
+
+def equality_or_5_rule_checker():
+    n1 = input("Enter the integer: ")
+    n2 = input("Enter the integer: ")
+
+    try:
+        n1 = int(n1)
+        n2 = int(n2)
+    except ValueError:
+        raise ValueError("I don't can, without intenger")
+    
+    if n1 == n2 or abs(n1 - n2) == 5 or n1 + n2 == 5:
+        return True
+    return False
+
