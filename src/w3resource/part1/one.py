@@ -350,9 +350,9 @@ def lcm_calculator2(numbers):
     return reduce((lambda x, y: int(x*y/gcd(x,y))),numbers)
 
 def triple_sum_with_equality_rule():
-    n1 = input("Enter the integer: ")
-    n2 = input("Enter the integer: ")
-    n3 = input("Enter the integer: ")
+    n1 = input("Enter a integer: ")
+    n2 = input("Enter a integer: ")
+    n3 = input("Enter a integer: ")
 
     try:
         n1 = int(n1)
@@ -366,8 +366,8 @@ def triple_sum_with_equality_rule():
     return n1+n2+n3
 
 def conditional_sum_to_20():
-    n1 = input("Enter the integer: ")
-    n2 = input("Enter the integer: ")
+    n1 = input("Enter a integer: ")
+    n2 = input("Enter a integer: ")
 
     try:
         n1 = int(n1)
@@ -380,8 +380,8 @@ def conditional_sum_to_20():
     return n1 + n2
 
 def equality_or_5_rule_checker():
-    n1 = input("Enter the integer: ")
-    n2 = input("Enter the integer: ")
+    n1 = input("Enter a integer: ")
+    n2 = input("Enter a integer: ")
 
     try:
         n1 = int(n1)
@@ -392,4 +392,13 @@ def equality_or_5_rule_checker():
     if n1 == n2 or abs(n1 - n2) == 5 or n1 + n2 == 5:
         return True
     return False
+
+def add_integers_validator():
+    n1 = int(input("Enter a integer: "))
+    n2 = int(input("Enter a integer: "))
+
+    if not(isinstance(n1,int) or isinstance(n2,int)):
+        raise TypeError("This arguments is not numbers")
+    
+    return n1 + n2
 
