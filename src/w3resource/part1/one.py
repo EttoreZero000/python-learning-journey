@@ -402,3 +402,9 @@ def add_integers_validator():
     
     return n1 + n2
 
+def personal_info_formatter():
+    name = input("Enter your first name: ")
+    age = input("Enter your age: ")
+    address = input("Enter your address: ")
+
+    return("Name: {}\nAge: {}\nAddress: {}".format(name, age, address))
