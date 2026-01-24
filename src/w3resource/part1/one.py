@@ -408,3 +408,15 @@ def personal_info_formatter():
     address = input("Enter your address: ")
 
     return("Name: {}\nAge: {}\nAddress: {}".format(name, age, address))
+
+def expression_solver():
+    x = input("Enter a number: ")
+    y = input("Enter a number: ")
+
+    try:
+        x = int(x)
+        y = int(y)
+    except ValueError:
+        raise ValueError("I don't can, without numbers")
+    
+    return "({} + {})^2 = {}".format(x,y,(x+y)**2)
