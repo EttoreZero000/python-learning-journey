@@ -420,3 +420,17 @@ def expression_solver():
         raise ValueError("I don't can, without numbers")
     
     return "({} + {})^2 = {}".format(x,y,(x+y)**2)
+
+def future_value_calculator():
+    principal = input("Enter a atm: ")
+    intereses = input("Enter a intereses: ")
+    years = input("Enter the years: ")
+
+    try:
+        principal = float(principal)
+        intereses = float(intereses)
+        years = float(years)
+    except ValueError:
+        raise ValueError("I don't can, without numbers")
+    
+    return principal * ((1 + (0.01 * intereses)) ** years)
