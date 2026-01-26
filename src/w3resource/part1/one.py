@@ -12,6 +12,9 @@ Version: Python3.13
 
 import sys
 import os.path
+import os
+import platform
+import struct
 import datetime
 import math
 from math import *
@@ -452,3 +455,9 @@ def file_existence_checker():
     print(os.path.isfile("main.txt"))
     print(os.path.isfile("./main.py"))
     print(os.path.isfile("./../../../README.md"))
+
+def shell_mode_detector():
+    return struct.calcsize("P"*8)
+
+def os_and_platform_info():
+    return "OS: {}\nPlatform: {}\nVersion: {}".format(os.name, platform.system(),platform.release())
