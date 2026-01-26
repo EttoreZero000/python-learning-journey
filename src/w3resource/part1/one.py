@@ -11,6 +11,7 @@ Version: Python3.13
 """
 
 import sys
+import os.path
 import datetime
 import math
 from math import *
@@ -434,3 +435,20 @@ def future_value_calculator():
         raise ValueError("I don't can, without numbers")
     
     return principal * ((1 + (0.01 * intereses)) ** years)
+
+def string_to_int(s: str):
+    return [int(x.strip()) for x in s.split(",") if x.strip()]
+
+def distance_between_points():
+    point1 = input("Enter a point (x,y): ")
+    point2 = input("Enter a point (x,y): ")
+
+    point1 = string_to_int(point1)
+    point2 = string_to_int(point2)
+
+    return (abs((point2[0] - point1[0]) ** 2 + (point2[1] - point1[1]) ** 2)) ** 0.5
+
+def file_existence_checker():
+    print(os.path.isfile("main.txt"))
+    print(os.path.isfile("./main.py"))
+    print(os.path.isfile("./../../../README.md"))
