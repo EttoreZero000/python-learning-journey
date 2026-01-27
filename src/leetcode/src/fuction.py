@@ -1,9 +1,10 @@
+from clases import *
 
 def two():
     string = input("Enter the name fuction: ")
     print(string.replace(" ", "_").lower())
 
-def one():
+def two_sum():
     nums = [2,7,11,15]
     target = 9
 
@@ -21,3 +22,5 @@ def one():
         for j in range(len(nums)):
             if nums[i]+nums[j] == target and not(i==j):
                 return [i,j]
+class Solution:            
+    def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:

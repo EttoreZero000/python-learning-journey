@@ -3,10 +3,14 @@ Docstring para leetcode.main
 """
 
 from src.fuction import *
+from src.clases import *
 
 def main():
+    #Clase que tiene todas las soluciones
+    s = Solution() 
+
     try:
-        print(one())
+        print(s.addTwoNumbers())
     except ValueError as e:
         print(f"Error: {e}")
 
