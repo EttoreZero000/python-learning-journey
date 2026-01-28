@@ -14,26 +14,19 @@ class Solution:
     def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
         num1 = 0
         i = 0
-        flag = False
 
         while l1 is not None:
             num1 += l1.val * 10**i
             l1 = l1.next
             i += 1
 
-
-
-
         num2 = 0
         i = 0
-        flag = False
 
         while l2 is not None:
             num2 += l2.val * 10**i
             l2 = l2.next
             i += 1
-
-            
 
         ultimo = None
 
