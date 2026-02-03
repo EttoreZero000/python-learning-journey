@@ -114,6 +114,35 @@ A lo largo del reto se cubrirán temas como:
 
 ---
 
+## w3resource
+
+**Objetivo:**  
+Resolver ejercicios de la plataforma **w3resource** aplicando buenas prácticas en Python.
+
+**Contenido trabajado:**
+- Organización del proyecto (`src/`, módulos, stages)
+- Imports correctos y ejecución con `python -m`
+- Uso de `__init__.py`
+- Separación por capas (lógica, validación, presentación)
+- Diccionarios como contratos de datos
+- Tests básicos de comportamiento
+
+---
+
+## LeetCode
+
+**Objetivo:**  
+Resolver problemas de **LeetCode** para fortalecer lógica, estructuras de datos y buenas prácticas en Python.
+
+**Contenido trabajado:**
+- Resolución de problemas por dificultad
+- Uso de estructuras de datos (listas, diccionarios, sets)
+- Enfoque en eficiencia y claridad del código
+- Separación de lógica y pruebas
+- Tests básicos para validar soluciones
+
+---
+
 ## 🔁 Progreso
 
 - 🚀 Etapa 1: Fundamentos de Programación
