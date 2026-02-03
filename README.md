@@ -150,6 +150,8 @@ Resolver problemas de **LeetCode** para fortalecer lógica, estructuras de datos
 - 🚀 Etapa 3: Profesionalización del Código
 - 🚀 Etapa 4: Modularización y Arquitectura
 - 🚀 Etapa 5: ...
+- w3resource
+- leetcode
 - ⏳ En progreso…
 
 *(El progreso se actualiza día a día con commits)*
