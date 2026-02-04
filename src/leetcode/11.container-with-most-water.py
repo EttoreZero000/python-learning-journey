@@ -87,6 +87,8 @@ class Solution:
                 right -= 1
 
         return max_area
+
+        # One pront with chatGTP
                 
 # @lc code=end
 
