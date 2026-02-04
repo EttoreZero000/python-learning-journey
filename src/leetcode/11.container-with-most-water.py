@@ -56,6 +56,37 @@
 # @lc code=start
 class Solution:
     def maxArea(self, height: List[int]) -> int:
-        
+        # Puntero izquierdo (inicio del arreglo)
+        left = 0
+        # Puntero derecho (final del arreglo)
+        right = len(height) - 1
+
+        # Aquí guardamos el área máxima encontrada
+        max_area = 0
+
+        # Mientras los punteros no se crucen
+        while left < right:
+            # El ancho es la distancia entre los punteros
+            width = right - left
+
+            # La altura del contenedor es la menor de las dos líneas
+            current_height = min(height[left], height[right])
+
+            # Área actual
+            area = width * current_height
+
+            # Actualizamos el máximo si encontramos algo mejor
+            if area > max_area:
+                max_area = area
+
+            # 🔑 Movimiento clave:
+            # Siempre movemos el puntero con la altura menor
+            if height[left] < height[right]:
+                left += 1
+            else:
+                right -= 1
+
+        return max_area
+                
 # @lc code=end
 
