@@ -52,9 +52,12 @@
 class Solution:
     def threeSumClosest(self, nums: List[int], target: int) -> int:
         size = len(nums)
+        res = set()
         nums.sort()
 
+
 ##No tengo ni idea sera replicar lo anterior
+# I dont can with this problem, my biggest problem is that i use IA
         
         
 # @lc code=end
