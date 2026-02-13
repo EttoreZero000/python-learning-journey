@@ -49,6 +49,16 @@
 class Solution:
     def letterCombinations(self, digits: str) -> List[str]:
         ##Things for 10mins
+        lista = ["abc","def","ghi","jkl","mno","pqrs","tuv","wxyz"]
+        output = []
+        size = len(digits)
+
+        for i in digits:
+            i = int(i) - 2
+            for j in lista[i]:
+                output.append(j)
+
+        return output
         
 # @lc code=end
 
